@@ -43,6 +43,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'r2-oas'
+  gem 'rack-cors'
 end
 
 group :test do
