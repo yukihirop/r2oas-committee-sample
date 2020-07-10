@@ -1,0 +1,8 @@
+---
+components:
+  requestBodies:
+    ActionMailbox_Ingresses_Mailgun_InboundEmail:
+      content:
+        application/json:
+          schema:
+            "$ref": "#/components/schemas/ActionMailbox_Ingresses_Mailgun_InboundEmail"

@@ -1,0 +1,9 @@
+---
+components:
+  schemas:
+    ActionMailbox_Ingresses_Mailgun_InboundEmail:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64

@@ -1,0 +1,201 @@
+---
+paths:
+  "/api/v2/custom_posts":
+    get:
+      tags:
+      - api/v2/custom_post
+      summary: get summary
+      description: get description
+      responses:
+        '200':
+          description: api/v2/custom_post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Api_V2_CustomPost"
+        '422':
+          description: api/v2/custom_post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Api_V2_CustomPost"
+      deprecated: false
+    post:
+      tags:
+      - api/v2/custom_post
+      summary: post summary
+      description: post description
+      responses:
+        '201':
+          description: api/v2/custom_post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Api_V2_CustomPost"
+        '422':
+          description: api/v2/custom_post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Api_V2_CustomPost"
+      deprecated: false
+      requestBody:
+        "$ref": "#/components/requestBodies/Api_V2_CustomPost"
+  "/api/v2/custom_posts/new":
+    get:
+      tags:
+      - api/v2/custom_post
+      summary: get summary
+      description: get description
+      responses:
+        '200':
+          description: api/v2/custom_post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Api_V2_CustomPost"
+        '422':
+          description: api/v2/custom_post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Api_V2_CustomPost"
+      deprecated: false
+  "/api/v2/custom_posts/{id}":
+    get:
+      tags:
+      - api/v2/custom_post
+      summary: get summary
+      description: get description
+      responses:
+        '200':
+          description: api/v2/custom_post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Api_V2_CustomPost"
+        '404':
+          description: api/v2/custom_post description
+        '422':
+          description: api/v2/custom_post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Api_V2_CustomPost"
+      deprecated: false
+      parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer
+    patch:
+      tags:
+      - api/v2/custom_post
+      summary: patch summary
+      description: patch description
+      responses:
+        '204':
+          description: api/v2/custom_post description
+        '404':
+          description: api/v2/custom_post description
+        '422':
+          description: api/v2/custom_post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Api_V2_CustomPost"
+      deprecated: false
+      requestBody:
+        "$ref": "#/components/requestBodies/Api_V2_CustomPost"
+      parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer
+    put:
+      tags:
+      - api/v2/custom_post
+      summary: put summary
+      description: put description
+      responses:
+        '204':
+          description: api/v2/custom_post description
+        '404':
+          description: api/v2/custom_post description
+        '422':
+          description: api/v2/custom_post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Api_V2_CustomPost"
+      deprecated: false
+      requestBody:
+        "$ref": "#/components/requestBodies/Api_V2_CustomPost"
+      parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer
+    delete:
+      tags:
+      - api/v2/custom_post
+      summary: delete summary
+      description: delete description
+      responses:
+        '200':
+          description: api/v2/custom_post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Api_V2_CustomPost"
+        '404':
+          description: api/v2/custom_post description
+        '422':
+          description: api/v2/custom_post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Api_V2_CustomPost"
+      deprecated: false
+      parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer
+  "/api/v2/custom_posts/{id}/edit":
+    get:
+      tags:
+      - api/v2/custom_post
+      summary: get summary
+      description: get description
+      responses:
+        '200':
+          description: api/v2/custom_post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Api_V2_CustomPost"
+        '404':
+          description: api/v2/custom_post description
+        '422':
+          description: api/v2/custom_post description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Api_V2_CustomPost"
+      deprecated: false
+      parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer

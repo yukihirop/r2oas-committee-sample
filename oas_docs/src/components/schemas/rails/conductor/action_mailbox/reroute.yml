@@ -1,0 +1,9 @@
+---
+components:
+  schemas:
+    Rails_Conductor_ActionMailbox_Reroute:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64

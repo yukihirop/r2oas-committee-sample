@@ -1,0 +1,8 @@
+---
+components:
+  requestBodies:
+    Api_V1_AccountUserRole:
+      content:
+        application/json:
+          schema:
+            "$ref": "#/components/schemas/Api_V1_AccountUserRole"

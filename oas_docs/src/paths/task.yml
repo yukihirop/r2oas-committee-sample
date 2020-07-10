@@ -1,0 +1,201 @@
+---
+paths:
+  "/tasks":
+    get:
+      tags:
+      - task
+      summary: get summary
+      description: get description
+      responses:
+        '200':
+          description: task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+        '422':
+          description: task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+      deprecated: false
+    post:
+      tags:
+      - task
+      summary: post summary
+      description: post description
+      responses:
+        '201':
+          description: task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+        '422':
+          description: task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+      deprecated: false
+      requestBody:
+        "$ref": "#/components/requestBodies/Task"
+  "/tasks/new":
+    get:
+      tags:
+      - task
+      summary: get summary
+      description: get description
+      responses:
+        '200':
+          description: task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+        '422':
+          description: task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+      deprecated: false
+  "/tasks/{id}":
+    get:
+      tags:
+      - task
+      summary: get summary
+      description: get description
+      responses:
+        '200':
+          description: task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+        '404':
+          description: task description
+        '422':
+          description: task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+      deprecated: false
+      parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer
+    patch:
+      tags:
+      - task
+      summary: patch summary
+      description: patch description
+      responses:
+        '204':
+          description: task description
+        '404':
+          description: task description
+        '422':
+          description: task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+      deprecated: false
+      requestBody:
+        "$ref": "#/components/requestBodies/Task"
+      parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer
+    put:
+      tags:
+      - task
+      summary: put summary
+      description: put description
+      responses:
+        '204':
+          description: task description
+        '404':
+          description: task description
+        '422':
+          description: task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+      deprecated: false
+      requestBody:
+        "$ref": "#/components/requestBodies/Task"
+      parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer
+    delete:
+      tags:
+      - task
+      summary: delete summary
+      description: delete description
+      responses:
+        '200':
+          description: task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+        '404':
+          description: task description
+        '422':
+          description: task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+      deprecated: false
+      parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer
+  "/tasks/{id}/edit":
+    get:
+      tags:
+      - task
+      summary: get summary
+      description: get description
+      responses:
+        '200':
+          description: task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+        '404':
+          description: task description
+        '422':
+          description: task description
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Task"
+      deprecated: false
+      parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: integer
