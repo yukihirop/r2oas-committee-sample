@@ -1,24 +1,40 @@
-# README
+# r2oas-committee-sample
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sample using r2oas and committee
 
-Things you may want to cover:
+This blog is detailed about the relationship between committee and openapi
 
-* Ruby version
+https://tech.timee.co.jp/entry/2020/07/05/150312
 
-* System dependencies
+https://qiita.com/shohei1913/items/4c394b56fb7c92b928fe
 
-* Configuration
+```
+bundle exec rspec
 
-* Database creation
+.
+.
+.
 
-* Database initialization
+F
 
-* How to run the test suite
+Failures:
 
-* Services (job queues, cache servers, search engines, etc.)
+  1) Tasks GET /tasks/:id(.:format) conform apidoc
+     Failure/Error: assert_response_schema_confirm
 
-* Deployment instructions
+     Committee::InvalidResponse:
+       #/components/schemas/Task missing required parameters: hogehoge
+     # ./spec/requests/tasks_request_spec.rb:11:in `block (3 levels) in <top (required)>'
+     # ------------------
+     # --- Caused by: ---
+     # OpenAPIParser::NotExistRequiredKey:
+     #   #/components/schemas/Task missing required parameters: hogehoge
+     #   ./spec/requests/tasks_request_spec.rb:11:in `block (3 levels) in <top (required)>'
 
-* ...
+Finished in 0.73475 seconds (files took 2.1 seconds to load)
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/requests/tasks_request_spec.rb:7 # Tasks GET /tasks/:id(.:format) conform apidoc
+```
