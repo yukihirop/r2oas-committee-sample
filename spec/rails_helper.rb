@@ -9,6 +9,7 @@ require 'rspec/rails'
 require 'r2-oas'
 require 'rake_helper'
 require 'pry'
+Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -65,12 +66,6 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
-
-  config.add_setting :committee_options
-  config.committee_options = { 
-    schema_path: Rails.root.join('oas_docs', 'oas_doc.yml'),
-    parse_response_by_content_type: false
-  }
 
   config.include FactoryBot::Syntax::Methods
 
