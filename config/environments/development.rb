@@ -60,6 +60,10 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
+  R2OAS.configure do |config|
+    config.namespace_type = :underbar
+  end
+
   config.middleware.insert_before 0, Rack::Cors do
     allow do
       origins '*'

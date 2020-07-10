@@ -33,7 +33,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'committee-rails'
   gem 'rspec-rails'
-  gem 'r2-oas'
+  gem 'r2-oas', '~> 0.3.4'
   gem 'pry-rails'
 end
 
